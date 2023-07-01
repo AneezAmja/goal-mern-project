@@ -25,7 +25,7 @@ const setGoals = asyncHandler(async (req, res) => {
         throw new Error('please add a text field')
     }
 
-    //CREATE
+    //CREATE - Creating a goal
     const goal = await Goal.create({
         text: req.body.text
     })
