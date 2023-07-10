@@ -10,7 +10,7 @@ const registerUser = asyncHandler(async (req, res) => {
   // destructuring
   const { name, email, password } = req.body;
 
-  if (!name || !email || !email) {
+  if (!name || !email || !password) {
     res.status(400);
     throw new Error("Please add all fields");
   }
